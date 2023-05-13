@@ -11,6 +11,16 @@ from pytorch_pretrained_bert.modeling import BertForTokenClassification2
 from pytorch_pretrained_bert import BertTokenizer
 from pytorch_pretrained_bert import BertAdam
 import numpy as np
+
+
+# 获取当前脚本所在目录
+dir_path = os.path.dirname(os.path.abspath(__file__))
+
+# 设置当前工作目录
+os.chdir(dir_path)
+
+
+
 # os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 train_batch_size = 32
 dev_batch_size = 64
