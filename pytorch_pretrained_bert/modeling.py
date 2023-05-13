@@ -513,7 +513,7 @@ class PreTrainedBertModel(nn.Module):
             serialization_dir = tempdir
         # Load config
         config_file = os.path.join('kaggle/working/'+serialization_dir, CONFIG_NAME)
-	    print(config_file)
+	print(config_file)
         config = BertConfig.from_json_file(config_file)
         logger.info("Model config {}".format(config))
         # Instantiate model.
