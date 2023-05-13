@@ -310,7 +310,7 @@ class Processor_chinese(DataProcessor):
         return examples
 
 
-q_f = open('./ccl-cfn/q.json', 'a', encoding='utf8')
+# q_f = open('./ccl-cfn/q.json', 'a', encoding='utf8')
 
 
 def convert_examples_to_features_graph(examples, max_seq_length, tokenizer, ltp):
