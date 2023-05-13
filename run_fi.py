@@ -45,7 +45,7 @@ frame_data = json.load(open("./ccl-cfn/frame_info.json", encoding="utf8"))
 idx2f = [ x['frame_name'] for x in frame_data ]
 f2idx = { x['frame_name']:i for i, x in enumerate(frame_data) }
 num_labels = len(f2idx)
-model_name = "./bert_wwm"
+model_name = "bert_wwm-base-chinese"
 model = BertForTokenClassification2.from_pretrained(model_name, cache_dir=None, num_labels=num_labels)
 model.to(device)
 param_optimizer = list(model.named_parameters())
