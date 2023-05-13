@@ -31,8 +31,7 @@ epochs = 45
 random.seed(2021)
 np.random.seed(2021)
 torch.manual_seed(2021)
-# device = 'cpu'
-device = 'cuda:0'
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 do_train = True
 do_dev = True
 processor = Processor()
